@@ -10,17 +10,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>PHP Badwords</title>
 </head>
 <body>
     <form action="" method="get">
         <label for="words"></label>
         <input type="text" name="words" id="words">
-        <button>filtra</button>
+        <button>FILTRA</button>
     </form>
 
     <?= '<p>' . str_replace($filter, '***', $text_Main) . $filter . '</p>' ?>
     
-    <?= '<h2>' . strlen($filter) . '</h2' ?>
+    <?= '<h3>Lunghezza paragrafo censurato: ' . strlen($filter) . '</h3>' ?>
 </body>
 </html>
